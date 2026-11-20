@@ -15,7 +15,8 @@ months = [
 
 
 while True:
-    date = input("Date: ")
+    date = input("Date: ").strip()
+    # MM/DD/YYYY
     if len(date.split("/")) == 3:
         date = date.split("/")
         try:
@@ -25,6 +26,7 @@ while True:
                 break
         except ValueError:
             pass
+    # Month DD, YYYY
     else:
         date = date.split(",")
         if len(date) == 2:
@@ -37,3 +39,4 @@ while True:
                     break
             except ValueError:
                 pass
+
