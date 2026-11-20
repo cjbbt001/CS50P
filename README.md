@@ -24,8 +24,6 @@
 
 ### Week0 函数与变量
 
-`input()`、`print()`、字符串方法、类型转换。
-
 - `indoor.py` — 输入转小写
 - `playback.py` — 空格替换为 `...`
 - `einstein.py` — 按 E=mc² 计算能量
@@ -33,8 +31,6 @@
 - `tip.py` — 解析 `$50.00` 与 `15%`，计算小费
 
 ### Week1 条件判断
-
-`if` / `elif` / `else`、`match`、字符串比较与 `startswith`。
 
 - `deep.py` — 判断「终极答案」的几种写法
 - `bank.py` — 按问候语返回 `$0` / `$20` / `$100`
@@ -44,8 +40,6 @@
 
 ### Week2 循环
 
-`while`、`for`、`dict`、函数抽象。
-
 - `camel.py` — camelCase 转 snake_case
 - `coke.py` — 投币机，计算应付与找零
 - `twttr.py` — 删除所有元音
@@ -54,16 +48,12 @@
 
 ### Week3 异常
 
-`try` / `except` / `raise`、输入校验、`EOFError`。
-
 - `fuel.py` — 油量分数，输出 `E` / `F` / 百分比
 - `taqueria.py` — 点单，累加总价
 - `grocery.py` — 购物清单计数并按字母排序
 - `outdated.py` — 日期格式统一为 `YYYY-MM-DD`
 
 ### Week4 库
-
-标准库 `random` / `sys` / `requests`，第三方包 `pyfiglet` / `inflect` / `emoji`。
 
 - `game.py` — 猜数字
 - `professor.py` — 十道算术题与计分
@@ -90,16 +80,12 @@ pytest test_bank.py
 
 ### Week6 文件 I/O
 
-读写 CSV、`sys.argv` 校验、Pillow 图像处理。
-
 - `lines/` — 统计 `.py` 文件有效代码行数
 - `pizza/` — 用 `tabulate` 打印 CSV 菜单
 - `scourgify/` — `before.csv` 清洗为 `after.csv`
 - `shirt/` — 把衬衫图叠加到照片上
 
 ### Week7 正则表达式
-
-`re.search` / `re.findall` / `re.sub`、`re.VERBOSE`。
 
 - `numb3rs/` — 校验 IPv4（含测试）
 - `um/` — 统计独立单词 `um` / `umm`（含测试）
@@ -108,8 +94,6 @@ pytest test_bank.py
 - `watch/` — 从 HTML 中提取 YouTube 链接
 
 ### Week8 面向对象
-
-`class`、`__init__`、属性、方法、`@property`、异常抛出。
 
 - `jar/` — `Jar` 类实现 Cookie 罐存取（含测试）
 - `seasons/` — 生日到今天的分钟数，转英文单词（含测试）
@@ -122,8 +106,24 @@ pytest test_bank.py
 
 ## 环境
 
-依赖（用到时才需要）：
+### 依赖库
+
+第三方包（按需安装）：
+
+| 包 | 用途 | 用于 |
+| --- | --- | --- |
+| `requests` | 调用 HTTP API | Week4/bitcoin |
+| `pyfiglet` | ASCII 艺术字 | Week4/figlet |
+| `inflect` | 英文单复数与列举 | Week4/adieu、Week8/seasons |
+| `emoji` | emoji 别名转换 | Week4/emojize |
+| `tabulate` | 表格输出 | Week6/pizza |
+| `pillow` | 图像处理 | Week6/shirt |
+| `fpdf2` | 生成 PDF | Week8/shritificate |
+| `validators` | 邮箱格式校验 | Week7/response |
+| `pytest` | 单元测试 | Week5、Week7、Week8、Week9 |
+
+其余如 `sys`、`random`、`csv`、`re`、`datetime` 均为标准库。
 
 ```bash
-pip install requests pyfiglet inflect emoji tabulate pillow fpdf2 pytest
+pip install requests pyfiglet inflect emoji tabulate pillow fpdf2 validators pytest
 ```
