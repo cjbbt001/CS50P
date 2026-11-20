@@ -3,24 +3,7 @@
 - 课程主页：<https://cs50.harvard.edu/python>
 - 课堂代码：<https://cdn.cs50.net/python/2022/x/lectures/>
 
-本仓库按周保存 CS50P 的课后作业代码。
-
-## 目录
-
-| 周次 | 主题 | 作业文件 |
-| --- | --- | --- |
-| Week0 | 函数与变量 | `indoor.py` `playback.py` `einstein.py` `faces.py` `tip.py` |
-| Week1 | 条件判断 | `deep.py` `bank.py` `extensions.py` `interpreter.py` `meal.py` |
-| Week2 | 循环 | `camel.py` `coke.py` `twttr.py` `plates.py` `nutrition.py` |
-| Week3 | 异常 | `fuel.py` `taqueria.py` `grocery.py` `outdated.py` |
-| Week4 | 库 | `game.py` `professor.py` `bitcoin.py` `figlet.py` `emojize.py` `adieu.py` |
-| Week5 | 单元测试 | `test_bank/` `test_fuel/` `test_plates/` `test_twttr/` |
-| Week6 | 文件 I/O | `lines/` `pizza/` `scourgify/` `shirt/` |
-| Week7 | 正则表达式 | `numb3rs/` `um/` `response/` `working/` `watch/` |
-| Week8 | 面向对象 | `jar/` `seasons/` `shritificate/` |
-| Week9 | Final Project | `project.py` `test_project.py` |
-
-## 各周内容
+## 作业目录
 
 ### Week0 函数与变量
 
