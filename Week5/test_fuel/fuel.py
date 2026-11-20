@@ -1,18 +1,19 @@
 def main():
-    print(gauge(convert(input("Fraction: "))))
+    while True:
+        try:
+            print(gauge(convert(input("Fraction: "))))
+            break
+        except (ValueError, ZeroDivisionError):
+            continue
 
 
 def convert(fraction):
-    while True:
-        try:
-            x, y = map(int, fraction.split("/"))
-            if y == 0:
-                raise ZeroDivisionError
-            if x > y:
-                raise ValueError
-            return round(x / y * 100)
-        except (ValueError, ZeroDivisionError):
-            pass
+    x, y = map(int, fraction.split("/"))
+    if y == 0:
+        raise ZeroDivisionError
+    if x > y:
+        raise ValueError
+    return round(x / y * 100)
 
 
 def gauge(percentage):

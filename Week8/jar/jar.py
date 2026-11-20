@@ -25,3 +25,16 @@ class Jar:
     @property
     def size(self):
         return self.cookies
+
+
+def main():
+    jar = Jar(int(input("Enter the capacity of the jar: ")))
+    jar.deposit(5)
+    jar.withdraw(1)
+    print(jar)
+    print(jar.capacity)
+    print(jar.size)
+
+
+if __name__ == "__main__":
+    main()
